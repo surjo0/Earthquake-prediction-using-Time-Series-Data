@@ -4,7 +4,7 @@ This project predicts earthquake magnitudes using machine-learning models traine
 It explores traditional regression models and ensemble learning techniques to understand how well machine-learning can approximate seismic behavior.
 
 The work is implemented in the notebook:
-**Earthquake_prediction_using_Time_Series_Data.ipynb**
+**Earthquake_prediction_using_Time_Series_Data.py**
 
 ---
 
