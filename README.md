@@ -29,7 +29,7 @@ The goal is to compare how different models perform on seismic time-series data 
 
 This project uses a publicly available earthquake magnitude dataset:
 
-### **Dataset Link (Kaggle):**  
+### **Dataset Link:**  
 🔗 https://www.kaggle.com/datasets/danielbaires34/earthquake-dataset
 
 This dataset includes:
