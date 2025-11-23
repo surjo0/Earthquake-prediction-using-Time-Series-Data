@@ -80,7 +80,7 @@ The following regression metrics are used:
 ## Requirements
 
 ```pip install numpy pandas scikit-learn matplotlib```
-```pip install tensorflow torch```
+
 
    
 
