@@ -25,20 +25,26 @@ The goal is to compare how different models perform on seismic time-series data 
 
 ---
 
-## 📂 Dataset
+### 📂 Dataset
 
-You can use any seismic time-series dataset such as:
+This project uses a publicly available earthquake magnitude dataset:
 
-- USGS Earthquake Catalog  
-- Kaggle Earthquake Time Series Dataset  
-- Local/CSV-based historical earthquake logs  
+### **Dataset Link (Kaggle):**  
+🔗 https://www.kaggle.com/datasets/danielbaires34/earthquake-dataset
 
-Your notebook supports any dataset with:
+This dataset includes:
 
-- Time or sequence index  
-- Magnitude column (target)  
-- Optional features like depth, location, energy release, rolling statistics  
+- Earthquake magnitude  
+- Depth  
+- Latitude, longitude  
+- Time of occurrence  
+- Optional derived features you can compute (rolling mean, lag features, etc.)
 
+You can replace this dataset with any seismic CSV file having:
+
+- A timestamp or sequential index  
+- Magnitude column (target variable)  
+- Additional numerical predictors (optional)
 ---
 
 ## 🧠 Models Used
@@ -65,20 +71,16 @@ The following regression metrics are used:
 
 | Metric | Meaning |
 |--------|---------|
-| **MAE** | Average prediction error |
 | **MSE** | Squared error (penalizes large mistakes) |
 | **RMSE** | Square-root of MSE |
 | **R² Score** | How well the model explains variance |
 
-All metrics are stored in a dictionary:
 
-```python
-scores = {
-    "Model name": [],
-    "mse": [],
-    "RMSE": [],
-    "MAE": [],
-    "R^2": []
-}
 
+## Requirements
+
+```pip install numpy pandas scikit-learn matplotlib```
+```pip install tensorflow torch```
+
+   
 
